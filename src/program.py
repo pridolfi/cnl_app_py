@@ -12,8 +12,8 @@ wiringpi.pinMode(21, 1)
 
 while True:
     wiringpi.digitalWrite(21, 1)
-    time.sleep(0.5)
+    time.sleep(1)
     wiringpi.digitalWrite(21, 0)
-    time.sleep(0.5)
+    time.sleep(1)
     n.notify("WATCHDOG=1")
 
